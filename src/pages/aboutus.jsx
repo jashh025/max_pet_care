@@ -1,0 +1,20 @@
+import React from 'react';
+import './css/about.css';
+import Header from './layouts/header';
+import Footer from './layouts/footer';
+
+export default function ComingSoon() {
+  return (
+    <div>
+      <Header />
+
+      <div className="container bg-gray-900 text-white">
+        <div>
+          <h1>Coming Soon 🚀</h1>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+}
