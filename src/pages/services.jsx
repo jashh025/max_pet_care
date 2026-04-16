@@ -3,7 +3,7 @@ import './css/services.css';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 
-function services() {
+function Services() {
   return (
     <div>
       <Header />
@@ -19,4 +19,4 @@ function services() {
   );
 }
 
-export default services;
+export default Services;
