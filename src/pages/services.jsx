@@ -3,7 +3,7 @@ import './css/services.css';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 
-function Services() {
+const Services = () => {
   return (
     <div>
       <Header />
@@ -18,5 +18,3 @@ function Services() {
     </div>
   );
 }
-
-export default Services;
