@@ -20,7 +20,7 @@ const ContactUs = () => {
               <div>
                 <p>Email</p>
                 <p>Our friendly team is here to help.</p>
-                <a href="mailto:hi@untitledui.com">max@gmail.com</a>
+                <a href="mailto:maxpetcare2015@gmail.com">maxpetcare2015@gmail.com</a>
               </div>
             </div>
 
