@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import Header from './pages/layouts/header';
-import Footer from './pages/layouts/footer';
+// import Header from './pages/layouts/header';
+// import Footer from './pages/layouts/footer';
 
 import Home from './pages/home';
 import Services from './pages/services';
