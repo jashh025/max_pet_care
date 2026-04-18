@@ -37,7 +37,7 @@
   }
 }
 
-/* CARD */
+/* CARD (IMPORTANT FIX 🔥) */
 .gallery-card {
   position: relative;
   border-radius: 16px;
@@ -47,24 +47,30 @@
   transition: all 0.3s ease;
 }
 
-.gallery-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+/* ⭐ KEY FIX: FIX ASPECT RATIO */
+.gallery-card {
+  aspect-ratio: 4 / 3;   /* keeps uniform shape */
 }
 
-/* IMAGE (KEY FIX 🔥) */
+/* IMAGE */
 .gallery-card img {
   width: 100%;
-  height: 260px;          /* fixed for clean grid */
-  object-fit: cover;      /* clean uniform look */
+  height: 100%;
+  object-fit: cover;     /* fills card perfectly */
   object-position: center;
   display: block;
   transition: transform 0.5s ease;
 }
 
-/* ⭐ HOVER = ZOOM OUT REVEAL EFFECT */
+/* HOVER ZOOM OUT EFFECT */
 .gallery-card:hover img {
-  transform: scale(0.92);   /* zoom OUT effect */
+  transform: scale(0.92);
+}
+
+/* HOVER CARD */
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 /* OVERLAY */
