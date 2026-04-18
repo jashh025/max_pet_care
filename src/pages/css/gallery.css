@@ -1,89 +1,92 @@
 .gallery-container {
-  padding-top: 100px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 60px;
+  padding: 90px 5vw 60px;
   min-height: 100vh;
+  background: #fafafa;
 }
 
+/* HEADER */
 .title {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
 }
 
 .subtitle {
-  color: #666;
-  margin-bottom: 30px;
+  color: #777;
+  margin-bottom: 35px;
+  font-size: 1rem;
 }
 
-/* GRID LAYOUT */
+/* GRID - CLEAN SPACING */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* default desktop: 3 per row */
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
-/* Tablet */
+/* RESPONSIVE */
 @media (max-width: 992px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .gallery-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
-/* CARD */
+/* CARD STYLE (MODERN GLASSY LOOK) */
 .gallery-card {
   position: relative;
+  border-radius: 18px;
   overflow: hidden;
-  border-radius: 16px;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.35s ease;
 }
 
 .gallery-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
 
-/* IMAGE */
+/* IMAGE - CLEAN FIX (NO WEIRD CROPPING) */
 .gallery-card img {
   width: 100%;
-  height: 220px;
-  object-fit: contain; /* prevents cropping */
-  background: #f5f5f5;
+  height: 240px;
+  object-fit: cover;   /* BEST LOOK FOR GALLERY */
+  object-position: center;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 .gallery-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
-/* OVERLAY */
+/* OVERLAY (CLEAN FADE LOOK) */
 .overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.4);
+  padding: 14px;
   color: white;
+  font-size: 0.95rem;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0)
+  );
+
   opacity: 0;
   transition: 0.3s ease;
 }
 
 .gallery-card:hover .overlay {
   opacity: 1;
-}
-
-/* OPTIONAL: smoother text */
-.overlay {
-  font-size: 0.9rem;
 }
