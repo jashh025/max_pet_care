@@ -17,11 +17,9 @@ import dog11 from '../uploads/DSC05468.JPG';
 import dog12 from '../uploads/EEA69542-6528-4904-A438-5FDDD1753A73.PNG';
 import dog13 from '../uploads/IMG_20160811_092944.jpg';
 import dog14 from '../uploads/IMG_20180422_105812.JPG';
-import dog15 from '../uploads/IMG_20190307_100421.jpg';
-
 
 export default function Gallery() {
-  const images = [dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8, dog9, dog10, dog11, dog12, dog13, dog14, dog15];
+  const images = [dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8, dog9, dog10, dog11, dog12, dog13, dog14];
 
   return (
     <div>
