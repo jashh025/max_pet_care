@@ -25,7 +25,7 @@ import dog19 from '../uploads/IMG_20230427_152244.jpg';
 
 
 export default function Gallery() {
-  const images = [dog1, dog2, dog3, dog4];
+  const images = [dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8, dog9, dog10, dog11, dog12, dog13, dog14, dog15, dog16, dog17, dog18, dog19];
 
   return (
     <div>
