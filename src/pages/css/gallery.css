@@ -37,40 +37,35 @@
   }
 }
 
-/* CARD (IMPORTANT FIX 🔥) */
+/* CARD (NO FIXED HEIGHT = NO EMPTY SPACE ISSUE) */
 .gallery-card {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  background: #000;
+  background: transparent;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ⭐ KEY FIX: FIX ASPECT RATIO */
-.gallery-card {
-  aspect-ratio: 4 / 3;   /* keeps uniform shape */
-}
-
-/* IMAGE */
+/* IMAGE (IMPORTANT FIX 🔥) */
 .gallery-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;     /* fills card perfectly */
-  object-position: center;
-  display: block;
-  transition: transform 0.5s ease;
+  height: auto;          /* KEY FIX */
+  display: block;        /* removes gaps */
+  object-fit: cover;     /* clean fill */
+  border-radius: 16px;
+  transition: transform 0.3s ease;
 }
 
-/* HOVER ZOOM OUT EFFECT */
-.gallery-card:hover img {
-  transform: scale(0.92);
-}
-
-/* HOVER CARD */
+/* NORMAL HOVER (SIMPLE, CLEAN) */
 .gallery-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* subtle hover only (NOT crazy zoom) */
+.gallery-card:hover img {
+  transform: scale(1.02);
 }
 
 /* OVERLAY */
@@ -85,7 +80,7 @@
 
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.7),
     rgba(0,0,0,0)
   );
 
