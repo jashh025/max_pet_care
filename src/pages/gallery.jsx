@@ -3,17 +3,13 @@ import './css/gallery.css';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 
+import dog1 from './uploads/1ba36d16-1c12-4ec1-b526-e0efd4f52dc0.JPG';
+import dog2 from './uploads/2DB1BBBD-05F4-414C-9997-1D18DDE32A21.PNG';
+import dog3 from './uploads/9d222b5a-ebf4-45b9-b199-846ee949dde6.JPG';
+import dog4 from './uploads/50C6E16A-449C-4895-9837-79E8A0ED2FC9.PNG';
+
 export default function Gallery() {
-  const images = [
-    'https://images.unsplash.com/photo-1517849845537-4d257902454a',
-    'https://images.unsplash.com/photo-1558788353-f76d92427f16',
-    'https://images.unsplash.com/photo-1507149833265-60c372daea22',
-    'https://images.unsplash.com/photo-1517423440428-a5a00ad493e8',
-    'https://images.unsplash.com/photo-1530281700549-e82e7bf110d6',
-    'https://images.unsplash.com/photo-1525253086316-d0c936c814f8',
-    'https://images.unsplash.com/photo-1548199973-03cce0bbc87b',
-    'https://images.unsplash.com/photo-1574158622682-e40e69881006',
-  ];
+  const images = [dog1, dog2, dog3, dog4];
 
   return (
     <div>
@@ -31,7 +27,7 @@ export default function Gallery() {
         <div className="gallery-grid">
           {images.map((img, index) => (
             <div className="gallery-card" key={index}>
-              <img src={img} alt="dog" />
+              <img src={img} alt={`dog-${index}`} />
             </div>
           ))}
         </div>
