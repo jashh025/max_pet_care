@@ -1,28 +1,27 @@
 .gallery-container {
   padding: 90px 5vw 60px;
   min-height: 100vh;
-  background: #fafafa;
+  background: #f7f7f7;
 }
 
-/* HEADER */
+/* TITLE */
 .title {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  color: #222;
-  margin-bottom: 8px;
+  color: #1f1f1f;
+  margin-bottom: 6px;
 }
 
 .subtitle {
-  color: #777;
-  margin-bottom: 35px;
-  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
 }
 
-/* GRID - CLEAN SPACING */
+/* GRID */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 22px;
 }
 
 /* RESPONSIVE */
@@ -38,48 +37,49 @@
   }
 }
 
-/* CARD STYLE (MODERN GLASSY LOOK) */
+/* CARD */
 .gallery-card {
   position: relative;
-  border-radius: 18px;
+  border-radius: 16px;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  cursor: pointer;
-  transition: all 0.35s ease;
+  transition: all 0.3s ease;
 }
 
 .gallery-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
-/* IMAGE - CLEAN FIX (NO WEIRD CROPPING) */
+/* IMAGE (KEY FIX 🔥) */
 .gallery-card img {
   width: 100%;
-  height: 240px;
-  object-fit: cover;   /* BEST LOOK FOR GALLERY */
-  object-position: center;
-  display: block;
-  transition: transform 0.5s ease;
+  height: auto;           /* IMPORTANT */
+  display: block;         /* removes gap */
+  object-fit: contain;    /* FULL IMAGE, NO CROP */
+  background: transparent; /* NO ugly box */
+  transition: transform 0.4s ease;
 }
 
+/* subtle hover */
 .gallery-card:hover img {
-  transform: scale(1.08);
+  transform: scale(1.03);
 }
 
-/* OVERLAY (CLEAN FADE LOOK) */
+/* OVERLAY */
 .overlay {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  padding: 14px;
-  color: white;
-  font-size: 0.95rem;
+  left: 0;
+  right: 0;
+  padding: 12px 14px;
+  color: #fff;
+  font-size: 0.9rem;
 
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.7),
     rgba(0,0,0,0)
   );
 
