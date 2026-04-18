@@ -42,29 +42,29 @@
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  background: #fff;
+  background: #000;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
 }
 
 .gallery-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 /* IMAGE (KEY FIX 🔥) */
 .gallery-card img {
   width: 100%;
-  height: auto;           /* IMPORTANT */
-  display: block;         /* removes gap */
-  object-fit: contain;    /* FULL IMAGE, NO CROP */
-  background: transparent; /* NO ugly box */
-  transition: transform 0.4s ease;
+  height: 260px;          /* fixed for clean grid */
+  object-fit: cover;      /* clean uniform look */
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
-/* subtle hover */
+/* ⭐ HOVER = ZOOM OUT REVEAL EFFECT */
 .gallery-card:hover img {
-  transform: scale(1.03);
+  transform: scale(0.92);   /* zoom OUT effect */
 }
 
 /* OVERLAY */
@@ -79,7 +79,7 @@
 
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.75),
     rgba(0,0,0,0)
   );
 
