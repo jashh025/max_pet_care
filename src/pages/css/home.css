@@ -153,10 +153,18 @@
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px)) !important;
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
 
 /* TESTIMONIALS */
