@@ -2,9 +2,6 @@ import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-// import Header from './pages/layouts/header';
-// import Footer from './pages/layouts/footer';
-
 import Home from './pages/home';
 import Services from './pages/services';
 import About from './pages/aboutus';
@@ -18,9 +15,9 @@ export default function App() {
         <main className="flex-grow pt-20">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/#/aboutus" element={<About />} />
-            <Route path="/#/services" element={<Services />} />
-            <Route path="/#/gallery" element={<Gallery />} />
+            <Route path="/aboutus" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
@@ -28,4 +25,3 @@ export default function App() {
     </HashRouter>
   );
 }
-``;
