@@ -14,12 +14,12 @@ import dog8 from '../uploads/C757D3CB-5016-48E9-8628-7B394CB4F2EB.PNG';
 import dog9 from '../uploads/D820B446-EECC-4528-B9C8-F67EE6B7C604.PNG';
 import dog10 from '../uploads/DCB1F509-384D-4F28-BA3F-205AAF9343B4.PNG';
 import dog11 from '../uploads/DSC05468.JPG';
-import dog12 from '../uploads/EEA69542-6528-4904-A438-5FDDD1753A73.PNG';
-import dog13 from '../uploads/IMG_20160811_092944.jpg';
-import dog14 from '../uploads/IMG_20180422_105812.JPG';
+import dog12 from '../uploads/IMG_20160811_092944.jpg';
+import dog13 from '../uploads/IMG_20180422_105812.JPG';
+import dog13 from '../uploads/IMG_20190307_100421.jpg';
 
 export default function Gallery() {
-  const images = [dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8, dog9, dog10, dog11, dog12, dog13, dog14];
+  const images = [dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8, dog9, dog10, dog11, dog12, dog13];
 
   return (
     <div>
