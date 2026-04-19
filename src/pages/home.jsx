@@ -3,9 +3,9 @@ import './css/home.css';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 
-import dog1 from '../uploads/1ba36d16-1c12-4ec1-b526-e0efd4f52dc0.JPG';
-import dog2 from '../uploads/2DB1BBBD-05F4-414C-9997-1D18DDE32A21.PNG';
-import dog3 from '../uploads/BC3B1332-4329-4525-9C82-2FE81904D34E.PNG';
+import dog1 from '../uploads/C757D3CB-5016-48E9-8628-7B394CB4F2EB.PNG';
+import dog3 from '../uploads/2DB1BBBD-05F4-414C-9997-1D18DDE32A21.PNG';
+import dog2 from '../uploads/BC3B1332-4329-4525-9C82-2FE81904D34E.PNG';
 
 const Home = () => {
   return (
