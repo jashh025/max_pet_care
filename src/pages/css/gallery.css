@@ -80,7 +80,7 @@
 @media (max-width: 600px) {
   .gallery-gridi {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 22px;
   }
 
   .gallery-containeri {
