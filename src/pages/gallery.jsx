@@ -17,8 +17,6 @@ import dog11 from '../uploads/DSC05468.JPG';
 import dog12 from '../uploads/IMG_20160811_092944.jpg';
 import dog13 from '../uploads/IMG_20180422_105812.JPG';
 import dog14 from '../uploads/IMG_20190307_100421.jpg';
-
-// ⚠️ make sure file name EXACT ahh match aaganum
 import dogVideo from '../uploads/VIDEO-2025-05-03-18-01-59.mov';
 
 export default function Gallery() {
@@ -28,17 +26,12 @@ export default function Gallery() {
     dog8, dog9, dog10, dog11, dog12, dog13, dog14
   ];
 
-  // ✅ combine images + video
-  const items = [
-    ...images.map(img => ({ type: "image", src: img })),
-    { type: "video", src: dogVideo }
-  ];
-
   return (
     <div>
       <Header />
 
       <div className="gallery-containeri">
+
         <h1 className="title">
           <i className="fas fa-paw icon"></i>
           Our Happy Dogs Gallery
@@ -49,20 +42,19 @@ export default function Gallery() {
         </p>
 
         <div className="gallery-gridi">
-          {items.map((item, index) => (
+          {images.map((img, index) => (
             <div className="gallery-cardi" key={index}>
-
-              {item.type === "image" ? (
-                <img src={item.src} alt={`dog-${index}`} />
-              ) : (
-                <video controls>
-                  <source src={item.src} type="video/mp4" />
-                </video>
-              )}
-
+              <img src={img} alt={`dog-${index}`} />
             </div>
           ))}
         </div>
+
+        <div className="video-section">
+          <video controls>
+            <source src={dogVideo} type="video/mp4" />
+          </video>
+        </div>
+
       </div>
 
       <Footer />
