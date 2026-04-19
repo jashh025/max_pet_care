@@ -47,12 +47,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* IMAGE (IMPORTANT FIX 🔥) */
 .gallery-card img {
   width: 100%;
-  height: auto;          /* KEY FIX */
-  display: block;        /* removes gaps */
-  object-fit: cover;     /* clean fill */
+  height: 100%;         
+  display: block;       
+  object-fit: cover;     
   border-radius: 16px;
   transition: transform 0.3s ease;
 }
