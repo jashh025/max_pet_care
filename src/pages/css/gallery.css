@@ -22,7 +22,7 @@
 .gallery-gridi {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  gap: 10px;
 }
 
 .gallery-gridi > *:nth-last-child(1):nth-child(4n+1),
