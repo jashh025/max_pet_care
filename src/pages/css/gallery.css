@@ -1,4 +1,4 @@
-.gallery-container {
+.gallery-containeri {
   padding: 90px 5vw 60px;
   min-height: 100vh;
   background: #f7f7f7;
@@ -17,8 +17,7 @@
   margin-bottom: 30px;
 }
 
-/* GRID */
-.gallery-grid {
+.gallery-gridi {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
@@ -37,8 +36,7 @@
   }
 }
 
-/* CARD (NO FIXED HEIGHT = NO EMPTY SPACE ISSUE) */
-.gallery-card {
+.gallery-cardi {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
@@ -47,7 +45,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-card img {
+.gallery-cardi img {
   width: 100%;
   height: 100%;        
   display: block;       
@@ -56,14 +54,12 @@
   transition: transform 0.3s ease;
 }
 
-/* NORMAL HOVER (SIMPLE, CLEAN) */
-.gallery-card:hover {
+.gallery-cardi:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
-/* subtle hover only (NOT crazy zoom) */
-.gallery-card:hover img {
+.gallery-cardi:hover img {
   transform: scale(1.02);
 }
 
@@ -87,6 +83,6 @@
   transition: 0.3s ease;
 }
 
-.gallery-card:hover .overlay {
+.gallery-cardi:hover .overlay {
   opacity: 1;
 }
