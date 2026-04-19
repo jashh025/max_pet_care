@@ -162,7 +162,10 @@
 
 .gallery-grid img {
   width: 250px;
-  border-radius: 10px;
+  height: 250px;        
+  object-fit: cover;     
+  border-radius: 12px;
+  display: block;
 }
 
 /* TESTIMONIALS */
