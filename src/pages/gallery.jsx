@@ -23,31 +23,27 @@ export default function Gallery() {
   return (
     <div>
       <Header />
-      return (
-        <div>
-          <Header />
-    
-          <div className="gallery-container">
-            <h1 className="title">
-              <i className="fas fa-paw icon"></i>
-              Our Happy Dogs Gallery
-            </h1>
-            <p className="subtitle">
-              Moments of love, play & care at our dog hostel
-            </p>
-    
-            <div className="gallery-grid">
-              {images.map((img, index) => (
-                <div className="gallery-card" key={index}>
-                  <img src={img} alt={`dog-${index}`} />
-                </div>
-              ))}
-            </div>
-          </div>
-    
-          <Footer />
-        </div>
-      );
-}
 
-    
+      <div className="gallery-container">
+        <h1 className="title">
+          <i className="fas fa-paw icon"></i>
+          Our Happy Dogs Gallery
+        </h1>
+
+        <p className="subtitle">
+          Moments of love, play & care at our dog hostel
+        </p>
+
+        <div className="gallery-grid">
+          {images.map((img, index) => (
+            <div className="gallery-card" key={index}>
+              <img src={img} alt={`dog-${index}`} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+}
