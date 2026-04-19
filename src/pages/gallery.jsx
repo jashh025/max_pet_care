@@ -25,7 +25,7 @@ export default function Gallery() {
     <div>
       <Header />
 
-      <div className="gallery-container">
+      <div className="gallery-containeri">
         <h1 className="title">
           <i className="fas fa-paw icon"></i>
           Our Happy Dogs Gallery
@@ -35,9 +35,9 @@ export default function Gallery() {
           Moments of love, play & care at our dog hostel
         </p>
 
-        <div className="gallery-grid">
+        <div className="gallery-gridi">
           {images.map((img, index) => (
-            <div className="gallery-card" key={index}>
+            <div className="gallery-cardi" key={index}>
               <img src={img} alt={`dog-${index}`} />
             </div>
           ))}
