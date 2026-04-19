@@ -17,9 +17,11 @@ import dog11 from '../uploads/DSC05468.JPG';
 import dog12 from '../uploads/IMG_20160811_092944.jpg';
 import dog13 from '../uploads/IMG_20180422_105812.JPG';
 import dog14 from '../uploads/IMG_20190307_100421.jpg';
+import dogVideo from '../uploads/your-video.mp4';
 
 export default function Gallery() {
   const images = [dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8, dog9, dog10, dog11, dog12, dog13, dog14];
+  const videos = [dogVideo];
 
   return (
     <div>
@@ -35,13 +37,21 @@ export default function Gallery() {
           Moments of love, play & care at our dog hostel
         </p>
 
-        <div className="gallery-gridi">
-          {images.map((img, index) => (
-            <div className="gallery-cardi" key={index}>
-              <img src={img} alt={`dog-${index}`} />
-            </div>
-          ))}
-        </div>
+     <div className="gallery-gridi">
+  {items.map((item, index) => (
+    <div className="gallery-cardi" key={index}>
+      
+      {item.type === "image" ? (
+        <img src={item.src} alt={`dog-${index}`} />
+      ) : (
+        <video controls>
+          <source src={item.src} type="video/mp4" />
+        </video>
+      )}
+
+    </div>
+  ))}
+</div>
       </div>
 
       <Footer />
