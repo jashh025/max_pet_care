@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter , Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import Home from './pages/home';
@@ -8,9 +8,13 @@ import About from './pages/aboutus';
 import Gallery from './pages/gallery';
 import Contact from './pages/contact';
 
+import Header from './pages/layouts/header';
+
 export default function App() {
   return (
-    <BrowserRouter >
+    <HashRouter>
+      <Header />
+
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow pt-20">
           <Routes>
@@ -22,6 +26,6 @@ export default function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter >
+    </HashRouter>
   );
 }
