@@ -152,18 +152,17 @@
 }
 
 .gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  align-items: center;   
-  gap: 20px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  justify-content: center;  
+  gap: 12px;            
   margin-top: 20px;
 }
 
 .gallery-grid img {
   width: 250px;
-  height: 250px;        
-  object-fit: cover;     
+  height: 250px;
+  object-fit: cover;
   border-radius: 12px;
   display: block;
 }
