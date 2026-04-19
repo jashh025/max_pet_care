@@ -147,13 +147,12 @@
 
 /* GALLERY */
 .gallery {
-  padding: 60px 50px;
+  padding: 60px 0px;
   text-align: center;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
   justify-content: center;  
   gap: 12px;            
   margin-top: 20px;
