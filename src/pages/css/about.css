@@ -169,3 +169,18 @@ html, body {
 footer {
   margin-top: auto;
 }
+/* Mobile view fix */
+@media (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-image {
+    order: 2;   /* video keela pogum */
+  }
+
+  .about-content {
+    order: 1;   /* content mela varum */
+  }
+}
