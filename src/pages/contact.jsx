@@ -11,8 +11,8 @@ const ContactUs = () => {
 
     window.emailjs
       .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_rbn9aqa',
+        'template_4sgnqib',
         formRef.current
       )
       .then(
@@ -32,9 +32,12 @@ const ContactUs = () => {
         <h1>Get in touch</h1>
         <p>Our friendly team would love to hear from you.</p>
 
-        <div>
+        {/* GRID WRAPPER */}
+        <div className="contact-grid">
+
           {/* LEFT SIDE */}
-          <div>
+          <div className="contact-left">
+
             <div className="emailblock">
               <div><i className="fas fa-envelope"></i></div>
               <div>
@@ -63,17 +66,17 @@ const ContactUs = () => {
             <div className="phoneBlock">
               <div><i className="fas fa-phone"></i></div>
               <div>
-                <p style={{ margin: 0, fontWeight: 'bold' }}>Phone</p>
-                <p style={{ margin: '5px 0 0 0', color: '#555' }}>
-                  Mon-Fri from 8am to 5pm.
-                </p>
+                <p>Phone</p>
+                <p>Mon-Fri from 8am to 5pm.</p>
                 <a href="tel:9952731063">
                   +91 9952731063
                 </a>
               </div>
             </div>
+
           </div>
 
+          {/* RIGHT FORM */}
           <div className="contact-right">
             <form ref={formRef} onSubmit={sendEmail} className="contact-form">
               <input type="text" name="name" placeholder="Your Name" required />
@@ -83,14 +86,14 @@ const ContactUs = () => {
             </form>
           </div>
 
+          {/* MAP BOTTOM */}
           <div className="map-box">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.4713885372025!2d78.16994707393452!3d9.977864273417465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c6939dcffaf5%3A0x4bdd7eb8ed940a90!2sMAX%20PET%20CARE%20MADURAI-%20Dog%20hostel%20in%20madurai!5e0!3m2!1sen!2sin!4v1775141137609!5m2!1sen!2sin"
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.4713885372025!2d78.16994707393452!3d9.977864273417465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c6939dcffaf5%3A0x4bdd7eb8ed940a90!2sMAX%20PET%20CARE%20MADURAI"
+              loading="lazy"
+            ></iframe>
           </div>
-          
+
         </div>
       </div>
 
