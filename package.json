@@ -2,6 +2,7 @@
   "name": "react",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://maxpetcaremadurai.com",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",
     "react": "19.2.4",
