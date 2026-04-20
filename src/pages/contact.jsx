@@ -1,10 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './css/contact.css';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 
 const ContactUs = () => {
   const formRef = useRef();
+
+  // ✅ NEW STATE
+  const [statusMessage, setStatusMessage] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,11 +20,18 @@ const ContactUs = () => {
         formRef.current
       )
       .then(
-        () => alert('Message sent successfully!'),
-        () => alert('Failed to send message')
+        () => {
+          setIsSuccess(true);
+          setStatusMessage(
+            "Your message has been sent successfully! Our team will get in touch with you soon."
+          );
+          e.target.reset();
+        },
+        () => {
+          setIsSuccess(false);
+          setStatusMessage("Failed to send message. Please try again.");
+        }
       );
-
-    e.target.reset();
   };
 
   return (
@@ -53,12 +64,12 @@ const ContactUs = () => {
               <div>
                 <p>Office</p>
                 <p>Come say hello at our office HQ.</p>
-                <a>
+                <p className="contact-blue">
                   PLOT No 38 <br />
                   LVB NAGAR <br />
                   ANBU NAGAR EXTN KADACHANENTHAL <br />
                   MADURAI 625107
-                </a>
+                </p>
               </div>
             </div>
 
@@ -76,6 +87,14 @@ const ContactUs = () => {
 
           {/* RIGHT FORM */}
           <div className="contact-right">
+
+            {/* ✅ MESSAGE DISPLAY */}
+            {statusMessage && (
+              <p className={isSuccess ? "form-success" : "form-error"}>
+                {statusMessage}
+              </p>
+            )}
+
             <form ref={formRef} onSubmit={sendEmail} className="contact-form">
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="email" name="email" placeholder="Your Email" required />
@@ -84,14 +103,16 @@ const ContactUs = () => {
             </form>
           </div>
 
-          {/* MAP BOTTOM */}
+          {/* MAP */}
           <div className="map-box">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.4713885372007!2d78.16994707421303!3d9.97786427341686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c6939dcffaf5%3A0x4bdd7eb8ed940a90!2sMAX%20PET%20CARE%20MADURAI-%20Dog%20hostel%20in%20madurai!5e0!3m2!1sen!2sin!4v1776699484349!5m2!1sen!2sin" 
               loading="lazy"
               style={{ border: 0, borderRadius: "8px", width: "100%", height: "100%" }}
-              title="Max Pet Care Location"></iframe>
+              title="Max Pet Care Location">
+            </iframe>
           </div>
+
         </div>
       </div>
 
