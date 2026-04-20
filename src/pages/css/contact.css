@@ -4,12 +4,14 @@ body {
   box-sizing: border-box;
 }
 
+/* CONTAINER */
 .contact-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* HEADER TEXT */
 .contactpage {
   color: #333;
   font-family: Arial, sans-serif;
@@ -46,15 +48,19 @@ body {
   margin: 0 auto;
 }
 
+/* LEFT SIDE */
 .contact-left {
   grid-area: left;
+  text-align: left; /* IMPORTANT FIX */
 }
 
+/* RIGHT SIDE */
 .contact-right {
   grid-area: form;
   height: 100%;
 }
 
+/* MAP */
 .map-box {
   grid-area: map;
   height: 400px;
@@ -78,10 +84,12 @@ body {
   border: 1px solid #ddd;
   border-radius: 6px;
   outline: none;
+  font-size: 14px;
 }
 
 .contact-form textarea {
   min-height: 120px;
+  resize: none;
 }
 
 .contact-form button {
@@ -91,6 +99,11 @@ body {
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 6px;
+}
+
+.contact-form button:hover {
+  background: #155cc0;
 }
 
 /* CONTACT BLOCKS */
@@ -98,23 +111,50 @@ body {
 .addressBlock,
 .phoneBlock {
   display: flex;
-  margin-bottom: 30px;
+  align-items: flex-start; /* FIXED alignment */
+  margin-bottom: 25px;
 }
 
+/* ICON SAME SIZE FIX */
 .emailblock > div:first-child,
 .addressBlock > div:first-child,
 .phoneBlock > div:first-child {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
   background: #555;
   color: #f4d35e;
   border-radius: 50%;
-  padding: 12px;
-  margin-right: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 15px;
+  font-size: 18px;
 }
 
-/* RESPONSIVE DESIGN */
+/* TEXT CONTENT */
+.emailblock div:last-child,
+.addressBlock div:last-child,
+.phoneBlock div:last-child {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* BLUE CONTACT DETAILS */
+.emailblock a,
+.phoneBlock a,
+.addressBlock p:last-child {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.emailblock a:hover,
+.phoneBlock a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
