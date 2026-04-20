@@ -86,12 +86,11 @@ const ContactUs = () => {
 
           {/* MAP BOTTOM */}
           <div className="map-box">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.4713885372025!2d78.16994707393452!3d9.977864273417465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c6939dcffaf5%3A0x4bdd7eb8ed940a90!2sMAX%20PET%20CARE%20MADURAI%20-%20Dog%20hostel%20in%20madurai!5e0!3m2!1sen!2sin!4v1775141137609!5m2!1sen!2sin"
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.4713885372007!2d78.16994707421303!3d9.97786427341686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c6939dcffaf5%3A0x4bdd7eb8ed940a90!2sMAX%20PET%20CARE%20MADURAI-%20Dog%20hostel%20in%20madurai!5e0!3m2!1sen!2sin!4v1776699484349!5m2!1sen!2sin" 
               loading="lazy"
               style={{ border: 0, borderRadius: "8px", width: "100%", height: "100%" }}
-              title="Max Pet Care Location"
-            />
+              title="Max Pet Care Location"></iframe>
           </div>
         </div>
       </div>
