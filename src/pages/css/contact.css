@@ -15,8 +15,8 @@ body {
 .contactpage {
   color: #333;
   font-family: Arial, sans-serif;
-  padding: 120px 20px;
-  text-align: center;
+  padding: 120px 50px;
+  /* text-align: center; */
 }
 
 .contactpage > p:first-child {
@@ -167,4 +167,9 @@ body {
   .map-box {
     height: 280px;
   }
+
+  .contactpage {
+    padding: 120px 20px !important;
+    text-align: center !important;
+ }
 }
