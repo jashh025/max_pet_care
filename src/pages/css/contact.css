@@ -174,12 +174,14 @@ body {
 
 .form-success {
   background: #e6f4ea;
-  color: #1e7e34;
+  color: #10b937;
   padding: 12px;
   border-radius: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 14px;
+  font-weight: 600
 }
+
 
 .form-error {
   background: #fdecea;
