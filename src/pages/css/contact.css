@@ -171,3 +171,21 @@ body {
     padding: 120px 20px !important;
  }
 }
+
+.form-success {
+  background: #e6f4ea;
+  color: #1e7e34;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.form-error {
+  background: #fdecea;
+  color: #d93025;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
