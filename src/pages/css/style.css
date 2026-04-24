@@ -9,15 +9,20 @@
 /* HEADER BASE */
 .header {
   position: fixed;
-  width: 100%;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 999;
+
+  background: transparent; /* keep transparent */
 }
 
-/* Scroll shadow */
-.header.scrolled {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.hero {
+  padding-top: 80px; /* 👈 THIS FIXES EVERYTHING */
 }
+
+
+
 
 /* CONTAINER */
 .header-container {
