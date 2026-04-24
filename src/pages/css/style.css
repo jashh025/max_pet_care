@@ -17,6 +17,10 @@
   background: transparent; /* keep transparent */
 }
 
+.hero {
+  padding-top: 500px; /* 👈 THIS FIXES EVERYTHING */
+}
+
 /* CONTAINER */
 .header-container {
   max-width: 1200px;
