@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     // <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-    <header>
+    <header className="header">
       <div className="header-container">
 
         {/* LOGO */}
