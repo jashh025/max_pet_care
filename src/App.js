@@ -13,8 +13,7 @@ import Header from './pages/layouts/header';
 export default function App() {
   return (
     <HashRouter>
-      <div className="flex flex-col min-h-screen">
-        <main className="flex-grow pt-20">
+      <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/aboutus" element={<About />} />
@@ -22,7 +21,6 @@ export default function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </main>
       </div>
     </HashRouter>
   );
