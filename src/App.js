@@ -13,8 +13,6 @@ import Header from './pages/layouts/header';
 export default function App() {
   return (
     <HashRouter>
-      <Header />
-
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow pt-20">
           <Routes>
