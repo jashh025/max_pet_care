@@ -60,8 +60,14 @@
 
 /* SERVICES */
 .services {
-  padding: 60px 20px;
+  padding: 60px 200px;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .service-cards {
+    padding: 60px 20px;
+  }
 }
 
 .service-cards {
