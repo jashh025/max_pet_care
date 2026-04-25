@@ -59,28 +59,48 @@ const Home = () => {
 
         <div className="why-container">
           <div className="why-card">
-            <i className="fas fa-shield-alt"></i>
-            <h3>Safe & Secure</h3>
-            <p>Your pets are always in a protected environment.</p>
+            <i className="fas fa-dog"></i>
+            <h3> Cage-free & leash-free environment </h3>
+            {/* <p>Your pets are always in a protected environment.</p> */}
           </div>
 
           <div className="why-card">
-            <i className="fas fa-broom"></i>
-            <h3>Clean Space</h3>
-            <p>Maintained hygiene for a healthy stay.</p>
+            <i className="fas fa-home"></i>
+            <h3> Home-based care, not a kennel or farm  </h3>
+            {/* <p>Maintained hygiene for a healthy stay.</p> */}
           </div>
 
           <div className="why-card">
-            <i className="fas fa-paw"></i>
-            <h3>Pet Friendly</h3>
-            <p>Comfortable and stress-free environment.</p>
+            <i className="fas fa-user-friends"></i>
+            <h3> Limited pets for maximum individual attention </h3>
+            {/* <p>Comfortable and stress-free environment.</p> */}
           </div>
 
           <div className="why-card">
-            <i className="fas fa-hand-holding-heart"></i>
-            <h3>Friendly Care</h3>
-            <p>Handled with love and attention.</p>
+            <i className="fas fa-award"></i>
+            <h3> 11+ years experience handling 500+ dogs  </h3>
+            {/* <p>Handled with love and attention.</p> */}
           </div>
+
+          <div className="why-card">
+            <i className="fab fa-whatsapp"></i>
+            <h3> Daily photo & video updates via WhatsApp </h3>
+            {/* <p>Handled with love and attention.</p> */}
+          </div>
+
+          <div className="why-card">
+            <i className="fas fa-heart"></i>
+            <h3> Special care for puppies and senior dogs </h3>
+            {/* <p>Handled with love and attention.</p> */}
+          </div>
+        </div>
+      </section>
+
+      <section className="services" id="services">
+        <div className="service">
+            <i className="fas fa-home"></i>
+            <h3>🏡 A Stay Your Pet Will Feel Comfortable In</h3>
+            <p>At Max Pet Care Madurai, we focus on making pets feel at home. </br> With indoor and outdoor play areas, regular supervision, and a calm environment, your pet stays active, relaxed, and well cared for.</p>
         </div>
       </section>
 
