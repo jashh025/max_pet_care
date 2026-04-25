@@ -200,6 +200,12 @@
   padding-top: 40px;
 }
 
+
+.cta h3 {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
 /* TRUST SECTION */
 .trust {
   padding: 60px 20px;
