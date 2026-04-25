@@ -36,8 +36,23 @@
   background: transparent;
 }
 
-/* CONTAINER */
 .header-container {
+  max-width: 1200px;
+  margin: auto;
+  height: 70px; /* 🔥 ADD THIS */
+  padding: 0 20px; /* 🔥 REMOVE vertical padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header * {
+  box-sizing: border-box;
+}
+
+
+/* CONTAINER */
+/* .header-container {
   max-width: 1200px;
   margin: auto;
   height: 100%; /* 🔥 important */
@@ -45,7 +60,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .logo-container {
   display: flex;
