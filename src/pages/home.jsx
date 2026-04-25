@@ -17,6 +17,8 @@ const Home = () => {
             Safe & Loving Care for Your Pets
             <i className="fas fa-paw icon"></i>
           </h1>
+          <p>Safe, Cage-Free Home Boarding for Your Pets.</p>
+          <p>Give your pet a comfortable, stress-free stay in a home-based environment while you are away. </p>
 
           <div className="hero-buttons">
             <a href="#contact" className="btn primary">
@@ -41,8 +43,8 @@ const Home = () => {
 
           <div className="card">
             <i className="fas fa-bone service-icon"></i>
-            <h3>Feeding</h3>
-            <p>Healthy meals on time based on your pet's needs.</p>
+            <h3>Home Cooked Food</h3>
+            <p>Customized healthy meals on time based on yout pet's need.</p>
           </div>
 
           <div className="card">
