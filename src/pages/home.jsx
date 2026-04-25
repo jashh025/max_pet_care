@@ -97,12 +97,13 @@ const Home = () => {
       </section>
 
       <section className="services" id="services">
-        <div className="service">
-            <i className="fas fa-home"></i>
+         <div className="service-cards">
+          <div className="card">            
             <h3>🏡 A Stay Your Pet Will Feel Comfortable In</h3>
             <p>At Max Pet Care Madurai, we focus on making pets feel at home. </p>
             <p> With indoor and outdoor play areas, regular supervision, and a calm environment, your pet stays active, relaxed, and well cared for.</p>
-        </div>
+           </div>
+          </div>
       </section>
 
       <section className="gallery">
