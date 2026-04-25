@@ -72,6 +72,10 @@
   flex-wrap: wrap;
 }
 
+.card i {
+  padding-bottom: 15px;
+}
+
 .card {
   background: #fff;
   padding: 25px;
