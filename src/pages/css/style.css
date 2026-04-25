@@ -13,8 +13,8 @@
   left: 0;
   width: 100%;
   z-index: 999;
-
-  background: transparent; /* keep transparent */
+  background: transparent; 
+  height: 70px; 
 }
 
 /* CONTAINER */
