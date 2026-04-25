@@ -5,6 +5,8 @@ import Footer from './layouts/footer';
 
 function AboutUs() {
   return (
+    <>
+       <Header />
     <section className="about-page">
 
       {/* Title Section */}
@@ -63,6 +65,8 @@ function AboutUs() {
 
       
     </section>
+       <Footer />
+      </>
   );
 }
 
