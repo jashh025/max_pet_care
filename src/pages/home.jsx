@@ -61,25 +61,25 @@ const Home = () => {
           <div className="card">
             <i className="fas fa-snowflake service-icon"></i>
             <h3>Air-conditioned options available </h3>
-            <p>Temperature-controlled rooms to keep your pets cool, relaxed, and stress-free during their stay.</p>
+            <p>Keep your pets cool, relaxed, and stress-free during their stay.</p>
           </div>
 
           <div className="card">
             <i className="fas fa-utensils service-icon"></i>
             <h3>Customized feeding & walking routines </h3>
-            <p>Personalized meal plans and walking routines based on your pet’s habits, age, and health.</p>
+            <p>Personalized meal plans & walking routines based on your pet’s habit.</p>
           </div>
 
            <div className="card">
             <i className="fas fa-car-side service-icon"></i>
             <h3>Pickup & drop service available </h3>
-            <p>Safe and convenient transportation service to pick up and drop off your pets at your doorstep.</p>
+            <p>Safe and convenient transportation service.</p>
           </div>
 
            <div className="card">
             <i className="fas fa-cut service-icon"></i>
             <h3>Grooming services (on request)</h3>
-            <p>Professional grooming including bathing, trimming, and hygiene care to keep your pet fresh and clean.</p>
+            <p>Professional grooming including bathing, trimming, and hygiene care.</p>
           </div>
         </div>
       </section>
