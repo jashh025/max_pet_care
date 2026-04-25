@@ -14,10 +14,9 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>
-            Safe & Loving Care for Your Pets
+            Safe, Cage-Free Home Boarding for Your Pets.
             <i className="fas fa-paw icon"></i>
           </h1>
-          <p>Safe, Cage-Free Home Boarding for Your Pets.</p>
           <p>Give your pet a comfortable, stress-free stay in a home-based environment while you are away. </p>
 
           <div className="hero-buttons">
