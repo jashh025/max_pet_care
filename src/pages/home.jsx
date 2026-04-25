@@ -151,6 +151,7 @@ const Home = () => {
         <h2>
           Book Your Pet's Stay Today
           <i className="fas fa-dog icon"></i>
+          <h3>Planning a trip? Leave your pet with someone you can trust.</h3>
         </h2>
 
         <div className="cta-buttons">
