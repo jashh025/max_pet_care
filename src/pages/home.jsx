@@ -84,6 +84,17 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="comfort">
+        <h2>🏡 A Stay Your Pet Will Feel Comfortable In</h2>
+        <p>
+          At Max Pet Care Madurai, we focus on making pets feel at home.
+        </p>
+        <p>
+          With indoor and outdoor play areas, regular supervision, and a calm
+          environment, your pet stays active, relaxed, and well cared for.
+        </p>
+      </section>
+      
       <section className="why">
         <h2>Why Choose Us?</h2>
 
@@ -123,16 +134,16 @@ const Home = () => {
             <h3> Special care for puppies and senior dogs </h3>
             {/* <p>Handled with love and attention.</p> */}
           </div>
-
-           <div className="why-card">   
-            <i>🏡</i>
-            <h3>A Stay Your Pet Will Feel Comfortable In</h3>
-            <p>At Max Pet Care Madurai, we focus on making pets feel at home. </p>
-            <p> With indoor and outdoor play areas, regular supervision, and a calm environment, your pet stays active, relaxed, and well cared for.</p>
-           </div>
         </div>
       </section>
 
+      <section className="trust">
+        <h2>❤️ Trusted by Pet Parents</h2>
+        <p>
+          We have cared for 500+ dogs across 30+ breeds with a focus on safety,
+          comfort, and individual attention.
+        </p>
+      </section>
       
       <section className="gallery">
         <h2>
