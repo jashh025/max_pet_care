@@ -7,6 +7,7 @@ import FAQ from "./FAQ";
 function Services() {
   return (
     <>
+       <Header />
       <section className="services-page">
 
         <div className="services-header">
