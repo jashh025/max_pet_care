@@ -3,7 +3,7 @@ import './css/about.css';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 
-import dog from '../uploads/BC3B1332-4329-4525-9C82-2FE81904D34E.PNG';
+import dog from '../uploads/50C6E16A-449C-4895-9837-79E8A0ED2FC9.PNG';
 
 const aboutData = [
   {
