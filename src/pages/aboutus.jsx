@@ -3,71 +3,106 @@ import './css/about.css';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 
-function AboutUs() {
+const aboutData = [
+  {
+    icon: 'fa-house',
+    text: 'Max Pet Care Madurai was founded with a simple goal — to create a boarding space where pets are cared for the way we would want our own pets to be treated.',
+  },
+  {
+    icon: 'fa-calendar-days',
+    text: 'The idea begins in 2015 when we faced a personal challenge with our Labrador, Max. During an emergency, we struggled to find a safe and comfortable place for him. After visiting multiple facilities and seeing pets confined without proper care, we decided to create a better alternative.',
+  },
+  {
+    icon: 'fa-paw',
+    text: 'Thats how Max Pet Care Madurai was born — as one of the first home-based pet boarding centers in Madurai, built on the belief that pets deserve freedom, comfort, and genuine care even when their owners are away.',
+  },
+  {
+    icon: 'fa-award',
+    text: 'With over 11 years of experience, we have handled 500+ dogs across 30+ breeds. Our approach focuses on understanding each pet individually and providing care that suits their needs.',
+  },
+  {
+    icon: 'fa-solid fa-dove',
+    text: 'We follow a cage-free, leash-free, home-based environment where pets can move freely and feel comfortable. We maintain a limited number of pets to ensure each one receives proper attention and care.',
+  },
+  {
+    icon: 'fa-shield-dog',
+    text: 'Pets are supervised at all times with continuous human presence and CCTV monitoring. Regular photo and video updates are shared with pet parents to keep them connected.',
+  },
+  {
+    icon: 'fa-heart',
+    text: 'Special attention is given to puppies and senior dogs to ensure they feel safe, comfortable, and well cared for throughout their stay.',
+  },
+];
+
+export default function AboutUs() {
   return (
-    <>
-       <Header />
-    <section className="about-page">
+    <div className="about-page">
+      <Header />
 
-      {/* Title Section */}
-      <div className="about-header">
-        <h1>About Max Pet Care Madurai</h1>
-        <p>Where pets are cared for like our own</p>
-      </div>
+      <section className="hero-section">
+        <img
+          src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1400&auto=format&fit=crop"
+          alt=""
+          className="hero-bg-image"
+        />
 
-      {/* About Section */}
-      <div className="about-container">
+        <div className="hero-overlay"></div>
 
-        <div className="about-image">
-          <video width="100%" controls>
-            <source src="/uploads/about-video.MP4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="container">
+          <div className="hero-content">
+            <p className="about-tag">ABOUT US ♡</p>
+
+            <h1>
+              Max Pet Care
+              <br />
+              Madurai
+            </h1>
+
+            <p className="hero-text">Where pets are cared for like our own.</p>
+          </div>
         </div>
+      </section>
 
-        <div className="about-content">
-          <h2>Who We Are</h2>
+      <section className="whos-section">
+        <div className="containers">
+          <h2 className="whos-title">🐾 Who We Are 🐾</h2>
+          <div className="timeline">
+            <div className="timeline-line"></div>
+            {aboutData.map((item, index) => (
+              <div className="timeline-item" key={index}>
+                <div className="timeline-icon">
+                  <i className={`fa-solid ${item.icon}`}></i>
+                </div>
 
-          <p>
-            Max Pet Care Madurai was founded with a simple goal — to create a boarding space where pets are cared for the way we would want our own pets to be treated.
-          </p>
-
-          <p>
-            The idea began in 2015 when we faced a personal challenge with our Labrador, Max. During an emergency, we struggled to find a safe and comfortable place for him. After visiting multiple facilities and seeing pets confined without proper care, we decided to create a better alternative.
-          </p>
-
-          <p>
-            That’s how Max Pet Care Madurai was born — as one of the first home-based pet boarding centers in Madurai, built on the belief that pets deserve freedom, comfort, and genuine care even when their owners are away.
-          </p>
-
-          <p>
-            With over 11 years of experience, we have handled 500+ dogs across 30+ breeds. Our approach focuses on understanding each pet individually and providing care that suits their needs.
-          </p>
-
-          <p>
-            We follow a cage-free, leash-free, home-based environment where pets can move freely and feel comfortable. We maintain a limited number of pets to ensure each one receives proper attention and care.
-          </p>
-
-          <p>
-            Pets are supervised at all times with continuous human presence and CCTV monitoring. Regular photo and video updates are shared with pet parents to keep them connected.
-          </p>
-
-          <p>
-            Special attention is given to puppies and senior dogs to ensure they feel safe, comfortable, and well cared for throughout their stay.
-          </p>
-
-          <p>
-            At Max Pet Care Madurai, your pet is not just boarded — they are cared for like our own.
-          </p>
+                <div className="timeline-content">
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
 
-      </div>
+      <section className="bottom-section">
+        <div className="container">
+          <div className="bottom-card">
+            <div className="bottom-content">
+              <h3>
+                A safe home away from home, filled with love, care and
+                happiness.
+              </h3>
+            </div>
 
-      
-    </section>
-       <Footer />
-      </>
+            <img
+              src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?q=80&w=1200&auto=format&fit=crop"
+              alt=""
+              className="bottom-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
   );
 }
-
-export default AboutUs;
