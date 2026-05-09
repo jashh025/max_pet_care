@@ -3,6 +3,8 @@ import './css/about.css';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 
+import dog from '../uploads/BC3B1332-4329-4525-9C82-2FE81904D34E.PNG';
+
 const aboutData = [
   {
     icon: 'fa-house',
@@ -40,11 +42,13 @@ export default function AboutUs() {
       <Header />
 
       <section className="hero-section">
-        <img
-          src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1400&auto=format&fit=crop"
+        {/* <img
+          src="https://i.ibb.co/sJmbPFTS/50-C6-E16-A-449-C-4895-9837-79-E8-A0-ED2-FC9.png"
           alt=""
           className="hero-bg-image"
-        />
+        /> */}
+
+        <img src={dog} alt="" className="hero-bg-image" />
 
         <div className="hero-overlay"></div>
 
