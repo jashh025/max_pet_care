@@ -77,7 +77,7 @@ const ContactUs = () => {
               <div><i className="fas fa-phone"></i></div>
               <div>
                 <p>Phone</p>
-                <p>Mon-Fri from 8am to 5pm.</p>
+                <p>Monday - Sunday from 8am to 7pm.</p>
                 <a href="tel:9952731063">
                   +91 9952731063
                 </a>
